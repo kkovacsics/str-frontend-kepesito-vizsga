@@ -163,7 +163,7 @@ describe('Movie-List Komponens tesztelése', () => {
     // HttpService deleteMovie metódus tesztelése
     // tslint:disable-next-line: deprecation
     httpMockService.deleteMovie(idToDelete).subscribe(
-      (response) => { expect(response).toEqual(deletedMovie); },
+      (response) => { expect(response).toEqual(deleteMovie); },
       err => console.log(err)
     );
     // Movie-List komponens deleteMovie meghivása meghívja-e a getHívást megint:
